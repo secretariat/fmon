@@ -1,6 +1,6 @@
 require 'net/smtp'  #for sending mail tp specified adress
 
-def read_set( "setting.conf")
+def read_set( conf_fname )
 
 end
 
