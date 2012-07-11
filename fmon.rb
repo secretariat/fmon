@@ -27,7 +27,7 @@ def send_mail( email, action, fname, fsz, ftype )
 end
 
 def checkidir( fname )
-        File.directory?(fname) ? "DIR" : "FILE"
+  File.directory?(fname) ? "DIR" : "FILE"
 end
 
 def processfiles( aDir ) 
