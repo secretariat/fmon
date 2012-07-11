@@ -27,14 +27,7 @@ def send_mail( email, action, fname, fsz, ftype )
 end
 
 def checkidir( fname )
-	str = ''
-	if( File.directory?(fname) )
-		str = "DIR"
-	else
-		str = "FILE"
-	end
-
-	return str
+  File.directory?(fname) ? "DIR" : "FILE"
 end
 
 def processfiles( aDir ) 
